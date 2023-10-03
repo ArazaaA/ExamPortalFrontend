@@ -14,7 +14,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import Swal from 'sweetalert2';
+import { HomeComponent } from './pages/home/home.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import Swal from 'sweetalert2';
     NavbarComponent,
     FooterComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +38,9 @@ import Swal from 'sweetalert2';
     FormsModule,
     HttpClientModule,
     MatSnackBarModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
